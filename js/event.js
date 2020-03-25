@@ -22,5 +22,20 @@ button.addEventListener('click', function(e){
         //button.textContent = 'Ocultar';
         //e.target.textContent = 'Ocultar';
         this.textContent = 'Mostar';
+
     }
 });
+
+button.addEventListener('mouseenter', function(){
+    this.className = 'btn btn-danger';
+})
+
+button.addEventListener('mouseout', function(){
+    this.className = 'btn btn-primary';
+})
+
+setTimeout(function(p1, p2, p3){
+    alert(p1);
+    alert(p2);
+    alert(p3);
+}, 3000, 'argumento 1', 'argumento 2', 'argumento 3');
